@@ -23,4 +23,10 @@ public class GestorSemanaTest {
         assertEquals(diasEsperados, gestorSemana.obtenerDias());
 }
 
+
+    @Test
+    void testObtenerTamañoLista() {
+        gestorSemana.crearListaDias();
+        assertEquals(7, gestorSemana.obtenerTamañoLista());
+    }
 }
