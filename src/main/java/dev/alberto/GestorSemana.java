@@ -25,4 +25,9 @@ public class GestorSemana {
     public List<String> obtenerDias() {
         return new ArrayList<>(diasDeLaSemana);
     }
+
+
+    public int obtenerTamañoLista() {
+        return diasDeLaSemana.size();
+    }
 }
