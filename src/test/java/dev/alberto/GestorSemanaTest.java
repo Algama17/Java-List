@@ -38,4 +38,14 @@ public class GestorSemanaTest {
         assertFalse(gestorSemana.existeDia("Miércoles"));
         assertEquals(6, gestorSemana.obtenerTamañoLista());
     }
+
+
+    @Test
+    void testOrdenarDiasAlfabeticamente() {
+        gestorSemana.crearListaDias();
+        gestorSemana.ordenarDiasAlfabeticamente();
+        List<String> diasOrdenados = Arrays.asList("Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado", "Viernes");
+        assertEquals(diasOrdenados, gestorSemana.obtenerDias());
+        
+    }
 }
