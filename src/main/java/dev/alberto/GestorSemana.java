@@ -39,4 +39,8 @@ public class GestorSemana {
     public boolean existeDia(String dia) {
         return diasDeLaSemana.contains(dia);
     }
+
+    public void ordenarDiasAlfabeticamente() {
+        diasDeLaSemana.sort(String::compareToIgnoreCase);
+    }
 }
