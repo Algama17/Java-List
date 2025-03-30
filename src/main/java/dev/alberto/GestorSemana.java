@@ -30,4 +30,13 @@ public class GestorSemana {
     public int obtenerTamañoLista() {
         return diasDeLaSemana.size();
     }
+
+
+    public boolean eliminarDia(String dia) {
+        return diasDeLaSemana.remove(dia);
+    }
+
+    public boolean existeDia(String dia) {
+        return diasDeLaSemana.contains(dia);
+    }
 }
