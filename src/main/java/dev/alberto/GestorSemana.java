@@ -1,6 +1,7 @@
 package dev.alberto;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class GestorSemana {
@@ -41,6 +42,6 @@ public class GestorSemana {
     }
 
     public void ordenarDiasAlfabeticamente() {
-        diasDeLaSemana.sort(String::compareToIgnoreCase);
+        Collections.sort(diasDeLaSemana);
     }
 }
