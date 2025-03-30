@@ -44,4 +44,8 @@ public class GestorSemana {
     public void ordenarDiasAlfabeticamente() {
         Collections.sort(diasDeLaSemana);
     }
+
+    public void vaciarLsta() {
+        diasDeLaSemana.clear();
+    }
 }
