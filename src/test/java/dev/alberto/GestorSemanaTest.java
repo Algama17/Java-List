@@ -48,4 +48,11 @@ public class GestorSemanaTest {
         assertEquals(diasOrdenados, gestorSemana.obtenerDias());
         
     }
+
+    @Test
+    void testVaciarLista() {
+        gestorSemana.crearListaDias();
+        gestorSemana.vaciarLsta();
+        assertEquals(0, gestorSemana.obtenerTamañoLista());
+    }
 }
