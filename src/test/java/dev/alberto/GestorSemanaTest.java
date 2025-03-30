@@ -1,6 +1,6 @@
 package dev.alberto;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,5 +28,14 @@ public class GestorSemanaTest {
     void testObtenerTamañoLista() {
         gestorSemana.crearListaDias();
         assertEquals(7, gestorSemana.obtenerTamañoLista());
+    }
+
+
+    @Test
+    void testEliminarDia() {
+        gestorSemana.crearListaDias();
+        assertTrue(gestorSemana.eliminarDia("Miércoles"));
+        assertFalse(gestorSemana.existeDia("Miércoles"));
+        assertEquals(6, gestorSemana.obtenerTamañoLista());
     }
 }
